@@ -12,7 +12,6 @@ public class RegisterResultPage extends Utils
   // Create Method To Verify That You Register or Not
   public void verifyRegisterMessage()
   {
-      String actual = getTextFromElement(By.className("result"));
       Assert.assertEquals(getTextFromElement(By.className("result")),expectedResultMessage,"Your Actual is Not Equals Expected");
   }
 }

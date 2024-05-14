@@ -17,7 +17,7 @@ public class LoadProp
         prop = new Properties();
         try
         {
-            input = new FileInputStream("src/test/java/Resources/config.properties");
+            input = new FileInputStream("src/test/Resources/config.properties");
             prop.load(input);
             input.close();
         }
