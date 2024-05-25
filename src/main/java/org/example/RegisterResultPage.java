@@ -12,6 +12,7 @@ public class RegisterResultPage extends Utils
   // Create Method To Verify That You Register or Not
   public void verifyRegisterMessage()
   {
+      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
       Assert.assertEquals(getTextFromElement(By.className("result")),expectedResultMessage,"Your Actual is Not Equals Expected");
   }
 }
