@@ -13,7 +13,7 @@ public class RegisterResultPage extends Utils
   public void verifyRegisterMessage()
   {
        //Create Method Fo Sleep Element
-      elementSleep()
+      elementSleep();
       Assert.assertEquals(getTextFromElement(By.className("result")),expectedResultMessage,"Your Actual is Not Equals Expected");
   }
 }
