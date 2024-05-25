@@ -58,4 +58,16 @@ public class Utils extends BasePage
             throw new RuntimeException(e);
         }
     }
+     //Create Method Fo Sleep Element
+    public static void elementSleep()
+    {
+        try
+        {
+            Thread.sleep(5000);
+        }
+        catch (InterruptedException e)
+        {
+            throw new RuntimeException(e);
+        }
+    }
 }
